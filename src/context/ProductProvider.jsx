@@ -9,7 +9,7 @@ export const ProductProvider = ({ children }) => {
 
   useEffect(() => {
 
-    axios.get('http://localhost:3001/produtos')
+    axios.get('https://api-products-kpiv.onrender.com')
       .then(data => {
         setProdutos(data.data)})
       .catch(err => console.error("Erro ao buscar produtos: ", err))
